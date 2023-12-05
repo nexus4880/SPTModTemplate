@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "nexus4880",
+    "classifications": ["BepInEx", "SPT"],
+    "identity": "Nexus4880.SPTMod",
+    "name": "SPT Mod",
+    "description": "A template for creating client-side SPT mods using BepInEx",
+    "shortName": "sptmod",
+    "sourceName": "SPTMod",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "preferNameDirectory": true,
+    "symbols": {
+        "ProjectGUID": {
+            "type": "generated",
+            "generator": "guid",
+            "replaces": "{ProjectGUID}",
+            "parameters": {
+                "defaultFormat": "D"
+            }
+        },
+        "AuthorDomain": {
+            "type": "parameter",
+            "datatype": "text",
+            "replaces": "{AuthorDomain}",
+            "defaultValue": "com.pandahhcorp"
+        },
+        "AuthorName": {
+            "type": "parameter",
+            "datatype": "text",
+            "replaces": "{AuthorName}",
+            "defaultValue": "Nexus"
+        },
+        "AuthorNameLower": {
+            "type": "generated",
+            "generator": "casing",
+            "parameters": {
+                "source": "AuthorName",
+                "toLower": true
+            },
+            "replaces": "{authorname}"
+        }
+    }
+}
